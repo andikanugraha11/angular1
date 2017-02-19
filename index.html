@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="andikaAng">
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
-<body>
 
+<body ng-controller="ListController">
+	<ul>
+		<li ng-repeat="mahasiswa in mahasiswas">
+			<span>{{mahasiswa.nama}}</span>
+			<p>{{mahasiswa.kelas}}</p>
+		</li>
+	</ul>
 </body>
 </html>
